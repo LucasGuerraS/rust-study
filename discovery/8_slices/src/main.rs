@@ -1,4 +1,23 @@
 fn main() {
+    let cereals = [
+        String::from("Foo"),
+        String::from("Bar"),
+        String::from("Buzz"),
+        String::from("Zit"),
+        String::from("Iaw"),
+    ];
+
+    let first_two = &cereals[..2];
+    println!("{first_two:?}");
+    let mid_three = &cereals[2..5];
+    println!("{mid_three:?}");
+    let foo = &cereals[0];
+    let f_slice = &foo[0..1];
+    println!("{f_slice:?}");
+    examples();
+}
+
+fn examples() {
     // String slice
     let language = String::from("Rustacian");
     let slice = &language[0..4];
